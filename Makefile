@@ -5,18 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tpaaso <tpaaso@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/11/02 13:02:45 by tpaaso            #+#    #+#              #
-#    Updated: 2020/11/02 13:03:10 by tpaaso           ###   ########.fr        #
+#    Created: 2022/04/11 13:52:52 by tpaaso            #+#    #+#              #
+#    Updated: 2023/01/02 12:46:19 by tpaaso           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fdf
 
-SRCS = libft/libft.a srcs/main.c srcs/draw.c srcs/key.c srcs/fdf.c
+SRCS = libft/libft.a src/main.c src/key.c src/fdf.c src/validate.c
 
-OBJ = $(SRC:.c=.o)
-
-CCFL = gcc -g -Wall -Wextra -Werror -I /usr/local/include/ -L /usr/local/lib -lmlx -framework OpenGL -framework AppKit
+CCFL = gcc -g -Wall -Wextra -Werror -L /usr/local/lib -lmlx -I /minilibx/ -framework OpenGL -framework AppKit
 
 LIBFT = libft/
 
